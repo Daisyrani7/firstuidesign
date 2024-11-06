@@ -1,0 +1,49 @@
+.banner-start{
+    .banner{
+        background: linear-gradient(to right, $green, $blue);
+        
+        @include media-max-sm{
+            height: 5rem;
+        }
+        .logo{
+            border-top-right-radius:2.5rem ;
+            border-bottom-right-radius: 3rem;
+            img{
+                height: 8rem;
+                margin-top: 1rem;
+            }
+            @include media-max-sm{
+               width: 5rem;
+                height: 5rem;
+                border-top-right-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
+                img{
+                    height: 4rem;
+                    width: 5rem;
+                }
+            }
+           
+        }
+        .energy{
+            height: 3rem;
+            width: 2rem;
+            // margin-top: 3rem;
+            @include media-max-sm{
+                height: 1.5rem;
+                width: .7rem;
+            }
+        }
+        .save-energy{
+            margin-top: 4rem;
+            @include media-max-sm{
+                font-size: .8rem;
+                // margin-top: 5rem;
+            }
+            @include media-max-md{
+                margin-top: 1rem;
+            }
+        }
+        
+    }
+    
+}

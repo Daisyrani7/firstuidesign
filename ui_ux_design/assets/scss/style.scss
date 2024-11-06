@@ -1,0 +1,74 @@
+@import './abstracts/variable';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+@import './includes/button';
+@import './includes/banner';
+@import './includes/search';
+
+.main-section{
+    .client-list{
+        margin-top: 2rem;
+            display: flex;
+            width: 100%;
+            }
+    .client-list:after{
+        border-bottom: 3px dotted $black;
+        margin-bottom: .5em;
+        content:'';
+        flex: 1;
+     }
+     .add-clients{
+        background-color: $btn-color;
+        color: $white;
+    }
+    .table-content{
+        .t-heading{
+            background-color: $table-color;
+            color: $white;
+            text-decoration: border-bottom;
+            border-bottom: 4px solid;
+            border-bottom-color: $green;
+            
+        }
+        .sakthi-row{
+            background-color: $table-clr2;
+        }
+        border-style:none;
+        .table{
+            th{
+                font-size: .9em;
+                font-weight: bold;
+                padding: .5rem;
+            }
+            td{
+                font-size: .8em;
+                padding: .7rem;
+            }
+        }
+    }
+    .last-section{
+        a {
+            text-decoration: none;
+            
+            padding: 4px 8px;
+          }
+          span{
+            border-radius: 50%;
+            background-color: $table-color;
+          }
+          
+    } 
+    .clients{
+        .active-client{
+            text-decoration: border-bottom;
+            border-bottom:2px solid;
+            border-bottom-color: red;
+        }
+        .btn{
+            font-size: .9em;
+            font-weight: bold;
+        }
+    }
+} 
